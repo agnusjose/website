@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Profile Page</title>
+    <link rel="stylesheet" href="artisanstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Artisan Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="checkout.html">Orders</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <h2>Artisan Profile</h2>
+            <form class="profile-form">
+                <label for="artisan-name">Artisan Name:</label>
+                <input type="text" id="artisan-name" name="artisan-name" required>
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="4" required></textarea>
+                <label for="portfolio">Portfolio:</label>
+                <input type="text" id="portfolio" name="portfolio">
+                <label for="contact-info">Contact Information:</label>
+                <textarea id="contact-info" name="contact-info" rows="4" required></textarea>
+                <button type="submit">Save Profile</button>
+            </form>
+        </section>
+
+        <section class="product-listings">
+            <h2>Product Listings</h2>
+            <div class="product-list">
+                <!-- Example product card -->
+                <div class="product-card">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Product Title</h3>
+                    <p>Description of the product goes here.</p>
+                    <p>Price: $XX.XX</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <!-- Repeat similar product cards as needed -->
+            </div>
+            <button class="add-product">Add Product</button>
+        </section>
+
+        <section class="order-management">
+            <h2>Order Management</h2>
+            <div class="order-list">
+                <!-- Example order -->
+                <div class="order">
+                    <h3>Order #001</h3>
+                    <p>Product: Product Title</p>
+                    <p>Price: $XX.XX</p>
+                    <p>Status: Shipped</p>
+                    <button>Track Shipment</button>
+                    <button>View Details</button>
+                </div>
+                <!-- Repeat similar orders as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Artisan Marketplace. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,325 @@
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.btn-submit {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #ff8533;
+}
+
+/* Cart Summary section */
+
+.cart-summary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+}
+
+.item-details .price {
+    font-weight: bold;
+}
+
+.subtotal {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Shipping Information section */
+
+.shipping-information {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.shipping-information form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.shipping-information label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.shipping-information input[type="text"],
+.shipping-information input[type="tel"],
+.shipping-information input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.shipping-information button[type="submit"] {
+    grid-column: span 2;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shipping-information button[type="submit"]:hover {
+    background-color: #ff8533;
+}
+
+/* Payment Details section */
+
+.payment-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.payment-methods {
+    margin-bottom: 20px;
+}
+
+.payment-methods label {
+    margin-right: 20px;
+}
+
+#payment-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.payment-details .payment-methods input[type="radio"] {
+    display: none;
+}
+
+.payment-details .payment-methods input[type="radio"]:checked + label {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.payment-details .payment-methods input[type="radio"]:checked + label:hover {
+    background-color: #ff8533;
+}
+
+.payment-details .payment-methods input[type="radio"]:checked ~ #payment-form {
+    display: block;
+}
+
+#payment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#payment-form input[type="text"],
+#payment-form input[type="tel"],
+#payment-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Order Review section */
+
+.order-review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.order-review .order-summary {
+    margin-bottom: 20px;
+}
+
+.order-review .order-summary p {
+    margin-bottom: 5px;
+}
+
+.promo-code {
+    margin-bottom: 20px;
+}
+
+.promo-code input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.btn-apply {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-apply:hover {
+    background-color: #ff8533;
+}
+
+.terms-and-conditions {
+    margin-bottom: 20px;
+}
+
+.terms-and-conditions label {
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.terms-and-conditions a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.terms-and-conditions a:hover {
+    text-decoration: underline;
+}
+
+/* Confirmation and Receipt section */
+
+.confirmation-receipt {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.confirmation-receipt .order-confirmation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.confirmation-receipt .receipt {
+    text-align: center;
+}
+
+.btn-print-receipt {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-print-receipt:hover {
+    background-color: #555;
+}
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}

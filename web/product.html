@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - CraftHaven</title>
+    <link rel="stylesheet" href="prostyles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CraftHaven</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="checkout.html">Cart</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="container">
+                <div class="product-images">
+                    <img src="product-main.jpg" alt="Product Main Image">
+                    <!-- Additional images can be added as needed -->
+                </div>
+                <div class="product-info">
+                    <h2>Product Title</h2>
+                    <p class="description">
+                        Detailed description of the product including craftsmanship, materials used, dimensions, and unique features.
+                    </p>
+                    <p class="price">$XX.XX</p>
+                    <div class="artisan-details">
+                        <p>By <a href="#">Artisan Name/Brand</a></p>
+                    </div>
+                    <div class="purchase-options">
+                        <form action="#">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                            <button type="submit" class="btn-add-to-cart">Add to Cart</button>
+                            <button type="submit" class="btn-buy-now">Buy Now</button>
+                        </form>
+                    </div>
+                    <div class="additional-info">
+                        <h3>Additional Information</h3>
+                        <p><strong>Shipping:</strong> Estimated time, costs, and options.</p>
+                        <p><strong>Availability:</strong> In stock / Special order conditions.</p>
+                        <!-- Include reviews and ratings section here if available -->
+                    </div>
+                    <div class="related-products">
+                        <h3>Related Products</h3>
+                        <!-- Display related or recommended products -->
+                        <div class="related-product">
+                            <img src="related-product.jpg" alt="Related Product Image">
+                            <h4>Related Product Title</h4>
+                            <p class="price">$XX.XX</p>
+                            <button class="btn-view-product">View Product</button>
+                        </div>
+                        <!-- Repeat similar related product items as needed -->
+                    </div>
+                    <div class="social-sharing">
+                        <h3>Share This Product</h3>
+                        <!-- Include social media sharing buttons -->
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn facebook">Share on Facebook</a>
+                            <a href="#" class="social-btn twitter">Share on Twitter</a>
+                            <!-- Add more social media sharing buttons as needed -->
+                        </div>
+                    </div>
+                    <div class="return-policy">
+                        <h3>Return Policy</h3>
+                        <p>Clear explanation of return or refund policy for the product.</p>
+                        <h3>Product Guarantees</h3>
+                        <p>Details about any warranties or guarantees associated with the product.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

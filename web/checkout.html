@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Process - CraftHaven</title>
+    <link rel="stylesheet" href="checkstyles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CraftHaven</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-summary">
+            <div class="container">
+                <h2>Cart Summary</h2>
+                <div class="cart-items">
+                    <!-- Display summary of items in cart dynamically -->
+                    <div class="cart-item">
+                        <img src="product-image.jpg" alt="Product Image">
+                        <div class="item-details">
+                            <h3>Product Name</h3>
+                            <p>Quantity: 1</p>
+                            <p class="price">$XX.XX</p>
+                        </div>
+                    </div>
+                    <!-- Repeat for each item in cart -->
+                </div>
+                <div class="subtotal">
+                    <p>Subtotal: $XX.XX</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="shipping-information">
+            <div class="container">
+                <h2>Shipping Information</h2>
+                <form action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" id="zip" name="zip" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <button type="submit" class="btn-submit">Proceed to Shipping Options</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="payment-details">
+            <div class="container">
+                <h2>Payment Details</h2>
+                <!-- Payment methods and form based on selection -->
+                <div class="payment-methods">
+                    <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+                    <label for="credit-card">Credit/Debit Card</label>
+                    <input type="radio" id="paypal" name="payment-method" value="paypal">
+                    <label for="paypal">PayPal</label>
+                    <!-- Add more payment methods as needed -->
+                </div>
+                <form id="payment-form">
+                    <!-- Payment form fields dynamically populated based on selection -->
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" required>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                    <button type="submit" class="btn-submit">Complete Purchase</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="order-review">
+            <div class="container">
+                <h2>Order Review</h2>
+                <div class="order-summary">
+                    <!-- Display summary of charges -->
+                    <p>Subtotal: $XX.XX</p>
+                    <p>Shipping: $X.XX</p>
+                    <p>Tax: $X.XX</p>
+                    <p class="total">Total: $XX.XX</p>
+                </div>
+                <div class="promo-code">
+                    <label for="promo-code">Have a Promo Code?</label>
+                    <input type="text" id="promo-code" name="promo-code">
+                    <button type="button" class="btn-apply">Apply</button>
+                </div>
+                <div class="terms-and-conditions">
+                    <input type="checkbox" id="agree-terms" required>
+                    <label for="agree-terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                </div>
+                <button type="button" class="btn-submit">Place Order</button>
+            </div>
+        </section>
+
+        <section class="confirmation-receipt">
+            <div class="container">
+                <h2>Confirmation and Receipt</h2>
+                <div class="order-confirmation">
+                    <p>Your order has been successfully placed!</p>
+                </div>
+                <div class="receipt">
+                    <!-- Display downloadable/printable receipt -->
+                    <a href="#" class="btn-print-receipt">Print Receipt</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contact us: support@crafthaven.com | Phone: +1234567890</p>
+        </div>
+    </footer>
+</body>
+</html>
